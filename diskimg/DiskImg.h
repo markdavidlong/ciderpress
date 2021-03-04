@@ -26,6 +26,7 @@
 #include <stdlib.h>
 #include <stdint.h>
 #include <assert.h>
+#include <sys/types.h>
 
 //#define EXCISE_GPL_CODE
 
@@ -190,7 +191,7 @@ class LinearBitmap;
  *
  * This class is just a namespace clumper.  Do not instantiate.
  */
-class DISKIMG_API Global {
+class /*DISKIMG_API*/ Global {
 public:
     // one-time DLL initialization; use SetDebugMsgHandler first
     static DIError AppInit(void);
